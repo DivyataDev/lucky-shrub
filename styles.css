@@ -1,0 +1,180 @@
+/*Reset the browser settings for entire page */
+*{ 
+    margin: 0rem;
+    padding: 0rem; 
+ }
+ 
+
+ body{    
+    background-color: #002147;
+    color: #e2e8f0;  
+    font-family: Arial, sans-serif;   
+    height: 100%;     
+    margin-left: 2%;
+    margin-right: 2%;   
+    
+ }
+ 
+ /*Header Logo */
+ header > img {
+    display: block;
+    max-width: 4%;     
+    margin-left: auto; 
+    margin-right: auto;   
+    padding: 1%;     
+ }
+ 
+/*Navigation Menu configuration */
+nav {
+    background-color: #2E8B57;
+    border-radius: 1rem;
+    margin: 1rem; 
+    font-size: x-large;
+ }
+  
+ nav ul{
+     list-style: none;
+     text-align: center; 
+
+ }
+ nav li{
+     display: inline-block;
+     padding: 1%;
+       
+ }
+
+ /* On Navigation hover on links */
+ nav li:hover{
+     /*To do - future enhancement : Use variables for colour configurations */
+      background-color: #e35f68;
+}
+ 
+ nav ul li a {
+     color: #e2e8f0;  
+     text-decoration: none;
+  
+ }
+
+/* Navigation menu  - active class*/
+ nav ul li.active {    
+    background-color: rebeccapurple; 
+ 
+}
+ 
+ /* Main configuration */
+ main {
+     margin: 1rem;
+ }
+ 
+ /* Section - applied flex to both sections */
+ section {
+     background-color: #e5e5e5;       
+     border-radius: 1rem;  
+     display: flex;  
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ /* Article */
+ article { 
+    background-color: #2E8B57;    
+    color: #e2e8f0; 
+    flex: 1;  
+    margin: 1rem; 
+    border-radius: 1rem;  
+ }
+
+ article img{
+     display: block;
+     margin: 1rem;
+     max-width: 90%;
+     max-height: 90%;
+     border-radius: 1rem;
+}
+ 
+ article p {
+     display: block;
+     padding: 1rem;
+
+     /*Uncomment - only if you want to clip out additional text - not required with current text content*/
+    /* height: 3rem;
+       overflow: hidden;
+       text-overflow: clip; */     
+ }
+ 
+ article h3, h5 { 
+        padding-left: 1rem;
+        text-decoration: underline;
+ }
+
+ /* Article heading - inside three columns */
+ article h3 {
+    text-align: center;
+   
+ }
+
+ article ul > li{    
+   
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+.article-links {
+    color: yellow;
+}
+ 
+/* Promontional banner - */ 
+.promotion {        
+     animation: myanimation 20s infinite linear; 
+     overflow: hidden;
+     margin-bottom: 1rem;     
+ } 
+ 
+ /* Animated effects - by changing opacity on banner image */
+ @keyframes myanimation{  
+     0% { opacity: 0; }
+     25% { opacity: 1; } 
+     100% { opacity: 0.80;}  
+ }
+
+ .promotion img {     
+     width: 100%;
+     height: 100%;   
+ } 
+ 
+
+/* Footer */
+ footer {
+     display: flex;
+     height: 10%;
+     padding: 1rem;
+     align-items: center;   
+     background-image: url('./images/greenbackground-img.png'); 
+
+ }
+
+ footer > div {
+     flex: 1;   
+ }
+ 
+ /* Logo cutomization in footer */
+ .logo {    
+     max-width: 6%;
+     padding-left: 1rem;
+ }
+
+ /* Change background colour while hovering on article item - using pseudoclass*/
+ .content-items article:hover{
+     /* future enhancement : to-do : To change colour, make use of variables to replace common colours, all at one time */    
+      background-color: #e35f68;  
+ }
+
+ mark{   
+    background-color: purple;
+    color: gold;
+  
+ }
+ 
+ #copyright {
+    text-align: right;
+ }
