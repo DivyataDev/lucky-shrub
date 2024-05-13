@@ -6,7 +6,7 @@
  
 
  body{    
-    background-color: #002147;
+    background-color: #e5e5e5;
     color: #e2e8f0;  
     font-family: Arial, sans-serif;   
     height: 100%;     
@@ -26,7 +26,7 @@
  
 /*Navigation Menu configuration */
 nav {
-    background-color: #2E8B57;
+    background-color: #034503;
     border-radius: 1rem;
     margin: 1rem; 
     font-size: x-large;
@@ -46,7 +46,9 @@ nav {
  /* On Navigation hover on links */
  nav li:hover{
      /*To do - future enhancement : Use variables for colour configurations */
-      background-color: #e35f68;
+      background-color: #399109;
+      border-radius: 0.7rem;
+     
 }
  
  nav ul li a {
@@ -57,32 +59,46 @@ nav {
 
 /* Navigation menu  - active class*/
  nav ul li.active {    
-    background-color: rebeccapurple; 
+    background-color: #399109; 
+    border-radius: 0.7rem;
  
 }
  
  /* Main configuration */
  main {
      margin: 1rem;
+     
  }
  
  /* Section - applied flex to both sections */
- section {
-     background-color: #e5e5e5;       
+ section { 
+     background-color: rgb(205 205 205 / 65%);
      border-radius: 1rem;  
      display: flex;  
-     flex-wrap: wrap;
-     justify-content: space-between;
+     flex-wrap: wrap;   
+     justify-content: space-between; /* */
+     min-width:400px;
+   
+    
  }
 
  /* Article */
- article { 
-    background-color: #2E8B57;    
-    color: #e2e8f0; 
+ article {  
+    background-color: #ffffffe3;
+    color: rgb(1, 59, 1); 
     flex: 1;  
     margin: 1rem; 
     border-radius: 1rem;  
+    padding: 1em;
+    display: grid; 
+    min-width:270px;
  }
+
+ /* @media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+ } */
 
  article img{
      display: block;
@@ -101,17 +117,19 @@ nav {
        overflow: hidden;
        text-overflow: clip; */     
  }
- 
- article h3, h5 { 
+  /* Article heading - inside three columns */
+ article h3 { 
         padding-left: 1rem;
-        text-decoration: underline;
+        text-decoration: double underline;
+        color: #2e8b57;
+        text-align: center;
  }
 
- /* Article heading - inside three columns */
- article h3 {
-    text-align: center;
-   
- }
+article h4 { 
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+    color: #2e8b57;
+}
 
  article ul > li{    
    
@@ -119,8 +137,23 @@ nav {
     margin-left: 2rem;
 }
 
-.article-links {
-    color: yellow;
+article ul {
+    margin-bottom: 1.5rem;;
+}
+.article-links { 
+  
+    background-color: #2E8B57;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #e2e8f0;
+    box-shadow: 3px 3px; 
+    padding: 0.8rem; 
+    float: right;
+}
+
+.article-links:hover {
+    background-color: #399109;
 }
  
 /* Promontional banner - */ 
@@ -149,7 +182,10 @@ nav {
      height: 10%;
      padding: 1rem;
      align-items: center;   
-     background-image: url('./images/greenbackground-img.png'); 
+     /* background-image: url('./images/greenbackground-img.png');  */
+     background-color: #2e8b57;
+     border-top-left-radius: 1rem;
+     border-top-right-radius: 1rem;
 
  }
 
@@ -166,12 +202,15 @@ nav {
  /* Change background colour while hovering on article item - using pseudoclass*/
  .content-items article:hover{
      /* future enhancement : to-do : To change colour, make use of variables to replace common colours, all at one time */    
-      background-color: #e35f68;  
+      box-shadow: 1px 1px;
  }
 
  mark{   
-    background-color: purple;
-    color: gold;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+
   
  }
  
