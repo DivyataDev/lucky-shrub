@@ -1,5 +1,5 @@
 ## Purpose:
-The homepage is a static Html webpage. Created for the purpose of Coursera project work, using a fictional client persona. 
+LuckyShrub website is created for Garden design firm. I've created a static html & css page for a fictional client persona (LuckyShrub). 
 
 
 ## Client Description:
@@ -11,7 +11,7 @@ Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a
 Download the code and open the index.html file in the web browser. 
 
 ## Technologies Used:
-- HTMl5 and CSS
+- HTML5 and CSS
 
 
 ## Features:
