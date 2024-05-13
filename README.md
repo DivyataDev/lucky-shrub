@@ -1,5 +1,5 @@
 ## Purpose:
-LuckyShrub website is created for Garden design firm. I've created a static html & css page for a fictional client persona (LuckyShrub). 
+"LuckyShrub" website is created for a Garden Design Firm. I've created a static html & css page for a fictional client persona (LuckyShrub). 
 
 
 ## Client Description:
@@ -16,7 +16,7 @@ Download the code and open the index.html file in the web browser.
 
 ## Features:
 
-# Visual layout
+### Visual layout
 
 - Home page is created for Lucky Shrub fictional client
 - Correct company logo is placed at the top of the page
@@ -26,7 +26,7 @@ Download the code and open the index.html file in the web browser.
 - The page has a footer that is split into two columns
 - The left column of the footer contain a small version of the client logo and the right column copyright text
 
-# Semantic structure
+### Semantic structure
 
 - When opening the HTML file in VS Code, it contains:
 
@@ -36,7 +36,7 @@ Download the code and open the index.html file in the web browser.
   -  A footer element for the footer
   -  Appropriate usage of other semantic tags such as article and section in the content of the main element
 
-# CSS layout, styling and effects
+### CSS layout, styling and effects
 - When viewing the home page in the browser:
  
   - CSS styling is used effectively.
