@@ -71,16 +71,24 @@ nav {
  }
  
  /* Section - applied flex to both sections */
- section { 
+  .promotion{ 
      background-color: rgb(205 205 205 / 65%);
      border-radius: 1rem;  
-     display: flex;  
-     flex-wrap: wrap;   
-     justify-content: space-between; /* */
-     min-width:400px;
-   
+ 
     
  }
+
+  .content-items { 
+    background-color: rgb(205 205 205 / 65%);
+    border-radius: 1rem;  
+    display: flex;  
+    flex-wrap: wrap;   
+    justify-content: space-between; 
+    min-width:400px;
+  
+   
+}
+
 
  /* Article */
  article {  
@@ -158,10 +166,15 @@ article ul {
  
 /* Promontional banner - */ 
 .promotion {        
-     animation: myanimation 20s infinite linear; 
+      animation: myanimation 20s infinite linear;   
      overflow: hidden;
      margin-bottom: 1rem;     
+   
  } 
+ .promotion div img {
+    min-width: 100%;
+     max-height: 100%;
+ }
  
  /* Animated effects - by changing opacity on banner image */
  @keyframes myanimation{  
